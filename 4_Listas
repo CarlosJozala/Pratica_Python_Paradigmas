@@ -1,0 +1,186 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMgkOSy0xVud0slfx5dkXNc",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/CarlosJozala/Praticas-em-Python/blob/main/4_Listas\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Listas**\n"
+      ],
+      "metadata": {
+        "id": "eL7fMfbm68r_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "hswO8yqF6flP"
+      },
+      "outputs": [],
+      "source": [
+        "# Criação de Lista\n",
+        "\n",
+        "primeira = [1,2,3,4,5,6,7,8,9,10]\n",
+        "print(primeira)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Criação de Variação na Lista\n",
+        "\n",
+        "primeira2 = [1,2,3,4,5,6,\"7\",True]\n",
+        "print(primeira2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H8jMChUG7Oti",
+        "outputId": "620ef7d8-d346-43d3-f4e7-6d8ae5bf8988"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5, 6, '7', True]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Mistura de Listas\n",
+        "\n",
+        "primeira3 = [14,[34,4,31,48,52],\"D\"]\n",
+        "print(primeira3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TiFA50ij7O0Q",
+        "outputId": "16e9c50b-ed0a-4c12-8ffe-3ad1d6f6e34f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[14, [34, 4, 31, 48, 52], 'D']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Criação de Lista com Range\n",
+        "\n",
+        "primeira4 = list(range(0,5))\n",
+        "print(primeira4)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "miPlUrH97ieJ",
+        "outputId": "850037f8-3e19-492f-cc2c-36984b67c3f9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[0, 1, 2, 3, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Dá o size da Lista\n",
+        "\n",
+        "print(len(\"primeira\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mm7WY68e7ilY",
+        "outputId": "53efb710-6a20-4984-fa29-f34a9459dfe1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Range dentro de Listas\n",
+        "\n",
+        "for n in range(0, len(primeira4)):\n",
+        "    print(primeira4[n]+1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eYn1gE_57n1n",
+        "outputId": "9be3d21d-50e8-4cf7-bcb2-b8f4a6d0ac34"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
