@@ -1,0 +1,141 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMC3zszsM84m/L36tOpf2mr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/CarlosJozala/Praticas-em-Python/blob/main/5_ModulosPacotes\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Utilização de Bibliotecas em Python**"
+      ],
+      "metadata": {
+        "id": "L14whqut8oNt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "RPBo0aNR8d1j"
+      },
+      "outputs": [],
+      "source": [
+        "# Criação de Um Calendário Simples\n",
+        "\n",
+        "import calendar as cal\n",
+        "\n",
+        "for i in range(1,13):\n",
+        "  print(cal.month(2023, i))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from datetime import date\n",
+        "atual = date.today().year\n",
+        "nascimento = int(input('Ano de nascimento: '))\n",
+        "idade = atual - nascimento\n",
+        "print('O atleta tem {} anos'.format(idade))\n",
+        "if idade <= 9:\n",
+        "    print('Classificação: Mirim')\n",
+        "elif idade <= 14:\n",
+        "    print('Classifição: Infantil')\n",
+        "elif idade <= 19:\n",
+        "    print('Classificação: Junior')\n",
+        "else:\n",
+        "    print('Classificação: Master')\n"
+      ],
+      "metadata": {
+        "id": "fTDW0wcY9pPY"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Prática de Gráficos com Pandas, Matplotlib e Numpy\n",
+        "     \n",
+        "Geração de um gráfico de Dispersão\n",
+        "\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "x = [1, 2, 6, 4, 5, 3, 7, 8, 9, 10]\n",
+        "y = [1, 3, 3, 2, 5, 6, 7, 7, 8, 8]\n",
+        "plt.title('Gráfico de Dispersão')\n",
+        "plt.scatter(x, y)\n",
+        "plt.show()\n",
+        "     "
+      ],
+      "metadata": {
+        "id": "SjnTs4N09pUd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Geração de um gráfico de Dispersão\n",
+        "\n",
+        "import numpy as np\n",
+        "#Geração de uma array seguindo até 100\n",
+        "\n",
+        "x1 = np.arange(0,100,1)\n",
+        "plt.title('Gráfico de Linha')\n",
+        "\n",
+        "plt.plot(x1, x1**2)\n",
+        "plt.show()\n",
+        "     "
+      ],
+      "metadata": {
+        "id": "NGxjO3Yb9pbA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Geração de um gráfico de Barra\n",
+        "\n",
+        "valor = np.array([10,20,30,40,50,60,70])\t\n",
+        "freq = np.array([50, 100, 120, 150, 160, 120, 90])\n",
+        "\n",
+        "width_n = 1.75   # Largura das Colunas \n",
+        "bar_color = 'k'  # Côr da barra = Preto\n",
+        "plt.title('Gráfico de Barras')\n",
+        "plt.bar(valor, freq, width=width_n, color=bar_color)\n",
+        "plt.show()"
+      ],
+      "metadata": {
+        "id": "XN1lpx6f-Bkg"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
