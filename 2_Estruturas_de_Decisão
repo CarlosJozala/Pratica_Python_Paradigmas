@@ -1,0 +1,104 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNcULJm6hMVw38PdpQ9kQBm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/CarlosJozala/Praticas-em-Python/blob/main/2_Estruturas_de_Decis%C3%A3o\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#  Estruturas de Decisão \n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "2LEyS7YV2aHy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xsOqn9OC2Owl",
+        "outputId": "65999e61-ca27-4b23-890c-6b5cfb154bc3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua nota:5\n",
+            "Reprovado\n"
+          ]
+        }
+      ],
+      "source": [
+        "nota = int(input(\"Digite sua nota:\"))\n",
+        "\n",
+        "if nota >=6:\n",
+        "\tprint(\"Aprovado\")\n",
+        "\tprint(\"Parabéns!\")\n",
+        "else:\n",
+        "\tprint(\"Reprovado\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = int(input(\"Digite sua nota:\"))\n",
+        "\n",
+        "if nota >= 7:\n",
+        "\tprint(\"Aprovado\")\n",
+        "else:\n",
+        "\tprint(\"Reprovado\")"
+      ],
+      "metadata": {
+        "id": "AcwZvYs62njV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = int(input(\"Digite sua nota:\"))\n",
+        "\n",
+        "if nota <= 4:\n",
+        "\tprint(\"Reprovado\")\n",
+        "elif nota > 4 and nota <=6:\n",
+        "\tprint(\"Exame\")\n",
+        "else:\n",
+        "\tprint(\"Aprovado\")"
+      ],
+      "metadata": {
+        "id": "cZMZaosQ2no_"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
